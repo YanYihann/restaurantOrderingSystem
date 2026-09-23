@@ -1,30 +1,53 @@
-# restaurantOrderingSystem
-cps2232餐厅点餐project
-这个系统包括了以下功能模块：
-菜单管理：支持添加、删除和显示菜单。
-订单管理：用户可以创建订单，选择菜品并计算总价。
-支付功能：用户可以支付订单金额。
-库存管理：库存会在下单时减少，库存低于5件时会有警告。
-数据存储：使用文件保存菜单和订单数据。
-在项目中：
-面向对象：所有核心功能都通过类和对象进行建模。
-继承与多态：菜单项（MenuItem）可以通过不同的子类进行扩展，例如我们可以有不同类型的菜单项（如饮料、主菜等）。
-异常处理：在用户输入和文件操作中进行异常处理，保证程序的健壮性。
-数组和集合：使用一维数组、栈、队列等数据结构来管理菜单、订单等。
-递归：在订单选择过程中可以使用递归来实现菜单导航。
-排序与映射：排序功能可以按价格或名称排序，使用映射来管理菜单项。
-泛型：在集合类中使用泛型，确保类型安全。
+# Restaurant Ordering System — Prototype
 
-1. 菜单项类 MenuItem (面向对象、继承、多态)
-2. 订单管理与栈、队列
-订单可以使用 栈 来实现后进先出的管理，模拟最近的订单优先支付的机制。我们也可以使用 队列 来处理排队的订单，按照先进先出的顺序进行处理。
-3. 排序与映射
-我们可以对菜单进行排序，按照价格或名称进行排序。我们也可以使用 映射 来存储和查询菜单项。
-4. 异常处理
-在用户输入和文件操作时，添加异常处理
-5. 泛型使用
-可以在订单管理中使用泛型来保证类型安全。
-6. 二叉搜索树与散列
-我们可以使用 二叉搜索树 来按价格存储和查询菜单项，或者使用 散列 来实现高效的菜单项查找。
-7. 文件I/O
-将菜单数据存储到文件，并从文件中加载。
+[![Java](https://img.shields.io/badge/Java-console%20app-ED8B00?logo=openjdk&logoColor=white)](https://www.java.com/)
+[![Status](https://img.shields.io/badge/status-scaffold-lightgrey)](#project-status)
+
+A CPS 2232 Java coursework repository intended to grow into a console-based restaurant ordering system.
+
+> [!IMPORTANT]
+> The current implementation is only a scaffold: `App1.java` prints `Hello World`. The menu, ordering, payment, inventory, persistence, and data-structure features described in earlier documentation are planned work and are not implemented in this revision.
+
+## Current behavior
+
+```text
+Hello World
+```
+
+## Run locally
+
+Requirements: JDK 8 or newer.
+
+```bash
+git clone https://github.com/YanYihann/restaurantOrderingSystem.git
+cd restaurantOrderingSystem
+javac App1.java
+java App1
+```
+
+## Planned scope
+
+- Menu item modeling with inheritance and polymorphism
+- Order queues and payment processing
+- Inventory tracking and low-stock warnings
+- Sorting and lookup by item name or price
+- Exception handling and file-based persistence
+- Practice with generics, recursion, maps, hashing, and binary search trees
+
+## Repository structure
+
+```text
+.
+├── App1.java   # Current application entry point
+└── README.md   # Project status and usage
+```
+
+## Project status
+
+This repository is an early learning exercise, not a production-ready ordering system. Update the feature list as code is added so the README remains aligned with the implementation.
+
+## License
+
+No license file is currently included. Unless a license is added, the code remains under the copyright holder's default rights.
+
+
